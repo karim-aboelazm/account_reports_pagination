@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="res_config_settings_view_form" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.inherit.account.reports</field>
+            <field name="model">res.config.settings</field>
+            <field name="inherit_id" ref="account_reports.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <div id="account_reports_settings" position="after">
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-12 o_setting_box">
+                            <div class="o_setting_left_pane"/>
+                            <div class="o_setting_right_pane">
+                                <div class="form-group d-flex align-items-center">
+                                    <label for="account_report_page_size" class="o_form_label fw-bold mb-0 me-2"/>
+                                    <field name="account_report_page_size" style="font-size:14px;" class="form-control form-control-sm w-auto text-center fw-bolder"/>
+                                    <span class="ms-2 text-muted fw-bold" attrs="{'invisible':[('account_report_page_size', '=',0)]}">rows per page</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </field>
+        </record>
+    </data>
+</odoo>
