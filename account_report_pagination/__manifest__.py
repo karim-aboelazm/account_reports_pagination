@@ -7,7 +7,6 @@
 
     "description": """
         Account Report Partner Pagination
-        ================================
         
         This module provides a configurable pagination feature for account partner reports in Odoo.
         It allows you to:
